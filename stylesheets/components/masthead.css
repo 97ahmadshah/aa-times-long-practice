@@ -1,1 +1,9 @@
 /* Your code here */
+header {
+    display: grid;
+    /* justify-content: space-between; */
+    grid-column: 1;
+    /* grid-template-columns: 1px 1px 1px; */
+    /* align-items: center; */
+    color: red;
+}
