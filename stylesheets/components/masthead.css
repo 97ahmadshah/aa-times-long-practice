@@ -1,9 +1,10 @@
 /* Your code here */
-header {
+.masthead {
     display: grid;
-    /* justify-content: space-between; */
-    grid-column: 1;
-    /* grid-template-columns: 1px 1px 1px; */
-    /* align-items: center; */
-    color: red;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.masthead_menu-and-search {
+    grid-column-start: 1;
 }
