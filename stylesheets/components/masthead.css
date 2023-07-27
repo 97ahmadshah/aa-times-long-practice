@@ -1,10 +1,90 @@
 /* Your code here */
 .masthead {
-    display: grid;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px; */
+    display:grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
+
+
+
+
+    grid-template-areas:
+    'menu . action'
+    '. tech .'
+    'date logo paper'
 }
 
 .masthead_menu-and-search {
-    grid-column-start: 1;
+    grid-area: menu;
+    display:flex;
+    padding-left: 20px;
+    font-size: 15px;
+
+}
+
+.masthead__actions{
+    grid-area: action;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    flex:flex-end;
+    padding-left: 20%;
+}
+
+ .masthead__technologies{
+    grid-area: tech;
+    border: solid;
+    width: fit-content;
+
+}
+
+.masthead__date{
+    grid-area: date;
+}
+
+.masthead__logo{
+    grid-area: logo;
+
+}
+
+.masthead__paper{
+    grid-area: paper;
+}
+.bars,.search{
+    /* font-size: 11px; */
+    padding: 7px 9px 7px 9px;
+}
+
+.bars:hover,.search:hover{
+    background-color: #f7f7f5;
+}
+
+.subscribe{
+    background-color: #6288a5;
+        border-radius: 3px;
+        color: white;
+        font-family: arial, helvetica, sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        margin: 0 4px;
+        padding: 7px 9px;
+        text-transform: uppercase;
+        transition: background-color 0.3s;
+    width: fit-content;
+}
+
+.login{
+    background-color: #6288a5;
+        border-radius: 3px;
+        color: white;
+        font-family: arial, helvetica, sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        margin: 0 4px;
+        padding: 7px 9px;
+        text-transform: uppercase;
+        transition: background-color 0.3s;
+    width: fit-content;
 }
